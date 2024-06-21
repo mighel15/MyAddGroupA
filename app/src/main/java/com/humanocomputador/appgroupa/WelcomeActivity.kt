@@ -18,7 +18,6 @@ class WelcomeActivity : AppCompatActivity() {
 
         val btnContinuar = findViewById<Button>(R.id.btnContinuar)
         btnContinuar.setOnClickListener {
-            //Toast.makeText(applicationContext,"Me presionaste...!!",Toast.LENGTH_SHORT).show()
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             finish()
