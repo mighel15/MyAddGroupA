@@ -1,5 +1,6 @@
 package com.humanocomputador.appgroupa
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
@@ -17,7 +18,10 @@ class WelcomeActivity : AppCompatActivity() {
 
         val btnContinuar = findViewById<Button>(R.id.btnContinuar)
         btnContinuar.setOnClickListener {
-            Toast.makeText(applicationContext,"Me presionaste...!!",Toast.LENGTH_SHORT).show()
+            //Toast.makeText(applicationContext,"Me presionaste...!!",Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+            finish()
         }
 
     }
